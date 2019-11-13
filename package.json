@@ -1,14 +1,14 @@
 {
-  "name": "angular-starter",
+  "name": "jira-sidebar",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve --host=0.0.0.0",
     "start": "ng serve",
     "build:production": "ng build --prod --aot",
-    "build:staging": "ng build -c staging angular-starter",
-    "test": "ISTANBUL_ADD_REPORTERS=text-summary ng test angular-starter",
-    "test:ci": "ISTANBUL_ADD_REPORTERS=text,json-summary KARMA_ADD_REPORTERS=junit ng test angular-starter --watch=false --progress=false && npm run check",
+    "build:staging": "ng build -c staging jira-sidebar",
+    "test": "ISTANBUL_ADD_REPORTERS=text-summary ng test jira-sidebar",
+    "test:ci": "ISTANBUL_ADD_REPORTERS=text,json-summary KARMA_ADD_REPORTERS=junit ng test jira-sidebar --watch=false --progress=false && npm run check",
     "check": "ng lint --type-check --tslint-config tslint.fix.json --format codeFrame && prettier --config .prettierrc --check 'src/**/*.{ts,js,html,css,scss,sass,less}'",
     "fix": "ng lint --type-check --fix --tslint-config tslint.fix.json --format codeFrame && prettier --config .prettierrc --write 'src/**/*.{ts,js,html,css,scss,sass,less}'",
     "e2e": "ng e2e"
