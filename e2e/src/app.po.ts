@@ -2,7 +2,8 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   navigateTo() {
-    return browser.get(browser.baseUrl) as Promise<any>;
+    // @ts-ignore:next-line:no-any
+    return browser.get(browser.baseUrl) as Promise;
   }
 
   getTitleText() {
